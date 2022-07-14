@@ -1,10 +1,13 @@
-package com.kodehive.technob11.repository;
+package com.kodehive.technob11.service;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.kodehive.technob11.model.SkripsiModel;
 
-public interface ISkripsiRepository {
+@Service
+public interface ISkripsiService {
 	public List<SkripsiModel> selectByKurangDariTahun(SkripsiModel model, int tahun);
 	public List<SkripsiModel> selectByKata(SkripsiModel model, String kata);
 	public List<SkripsiModel> selectByTahunNilai(SkripsiModel model, int tahun, int nilai);
