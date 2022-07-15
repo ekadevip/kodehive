@@ -5,41 +5,48 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.kodehive.technob11.model.SkripsiModel;
 import com.kodehive.technob11.service.ISkripsiService;
 
 @Controller
+@RequestMapping("/skripsi")
 public class SkripsiController {
 
 	@Autowired
 	ISkripsiService SkripsiService;
 
-	@RequestMapping("/view1")
-	public String selectSkripsi1(SkripsiModel model) {
-		SkripsiService.selectByKurangDariTahun(model, 2019);
-		return "Success..";
+	@RequestMapping("/view1/{tahun}")
+	@ResponseBody
+	public List<SkripsiModel> selectSkripsi1(SkripsiModel model, @PathVariable String tahun) {
+		return SkripsiService.selectByKurangDariTahun(model, Integer.valueOf(tahun));
 	}
-	@RequestMapping("/view2")
-	public String selectSkripsi2(SkripsiModel model) {
-		SkripsiService.selectByKata(model, "Aplikasi");
-		return "Success..";
+	
+	@RequestMapping("/view2/{kata}")
+	@ResponseBody
+	public List<SkripsiModel> selectSkripsi2(SkripsiModel model, @PathVariable String kata) {
+		return SkripsiService.selectByKata(model, kata);
 	}
-	@RequestMapping("/view3")
-	public String selectSkripsi3(SkripsiModel model) {
-		SkripsiService.selectByTahunNilai(model, 2019, 80);
-		return "Success..";
+	
+	@RequestMapping("/view3/{tahun}/{nilai}")
+	@ResponseBody
+	public List<SkripsiModel> selectSkripsi3(SkripsiModel model, @PathVariable String tahun, @PathVariable String nilai) {
+		return SkripsiService.selectByTahunNilai(model, Integer.valueOf(tahun), Integer.valueOf(nilai));
 	}
-	@RequestMapping("/view4")
-	public String selectSkripsi4(SkripsiModel model) {
-		SkripsiService.selectByKecualiTahun(model, 2018);
-		return "Success..";
+	
+	@RequestMapping("/view4/{tahun}")
+	@ResponseBody
+	public List<SkripsiModel> selectSkripsi4(SkripsiModel model, @PathVariable String tahun) {
+		return SkripsiService.selectByKecualiTahun(model, Integer.valueOf(tahun));
 	}
-	@RequestMapping("/view5")
-	public String selectSkripsi5(SkripsiModel model) {
-		SkripsiService.selectByTidakBerawalanHuruf(model, "A");
-		return "Success..";
+	
+	@RequestMapping("/view5/{huruf}")
+	@ResponseBody
+	public List<SkripsiModel> selectSkripsi5(SkripsiModel model, @PathVariable String huruf) {
+		return SkripsiService.selectByTidakBerawalanHuruf(model, huruf);
 	}
 
 }
