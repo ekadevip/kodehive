@@ -1,12 +1,16 @@
 package com.kodehive.technob11.controller;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.kodehive.technob11.model.SkripsiModel;
@@ -24,6 +28,7 @@ public class SkripsiController {
 	public List<SkripsiModel> selectSkripsi1(SkripsiModel model, @PathVariable String tahun) {
 		return SkripsiService.selectByKurangDariTahun(model, Integer.valueOf(tahun));
 	}
+	
 	
 	@RequestMapping("/view2/{kata}")
 	@ResponseBody
@@ -48,5 +53,42 @@ public class SkripsiController {
 	public List<SkripsiModel> selectSkripsi5(SkripsiModel model, @PathVariable String huruf) {
 		return SkripsiService.selectByTidakBerawalanHuruf(model, huruf);
 	}
-
+	
+	@PostMapping("/insert")
+	@ResponseBody
+	public String insert(@RequestBody SkripsiModel model) {
+		SkripsiService.insert(model);
+		return "Insert Success..";
+	}
+	
+	@PutMapping("/edit")
+	@ResponseBody
+	public String editById(@RequestBody SkripsiModel model, @RequestParam int id) {
+		return "Skripsi update success.."+SkripsiService.editById(model,id);
+	}
+	
+	@RequestMapping("/viewAll")
+	@ResponseBody
+	public List<SkripsiModel> selectAll(){
+		return SkripsiService.selectAll();
+	}
+	
+	@RequestMapping("/search")
+	@ResponseBody
+	public List<SkripsiModel> search(@RequestParam String keyword){
+		return SkripsiService.search(keyword);
+	}
+	
+	@DeleteMapping("/delete")
+	@ResponseBody
+	public int deleteById(@RequestParam int id) {
+		return SkripsiService.deleteById(id);
+	}
+	
+	@DeleteMapping("/delete/{id}")
+	@ResponseBody
+	public int deleteByIdUrl(@PathVariable int id) {
+		return SkripsiService.deleteById(id);
+	}
+	
 }

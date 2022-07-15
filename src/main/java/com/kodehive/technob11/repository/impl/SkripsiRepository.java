@@ -17,6 +17,21 @@ public class SkripsiRepository implements ISkripsiRepository {
 	JdbcTemplate jdbc;
 
 	@Override
+	public int insert(SkripsiModel model) {
+		// TODO Auto-generated method stub
+		var query = "Insert into skripsi(judul, nilai, tahun)" + "values (?,?,?)";
+		return jdbc.update(query,
+				new Object[] { model.getJudul(), model.getNilai(), model.getTahun() });
+	}
+	
+	@Override
+	public List<SkripsiModel> selectAll() {
+		// TODO Auto-generated method stub
+		var sql = "Select * from skripsi";
+		return jdbc.query(sql, new BeanPropertyRowMapper<SkripsiModel>(SkripsiModel.class));
+	}
+	
+	@Override
 	public List<SkripsiModel> selectByKurangDariTahun(SkripsiModel model, int tahun) {
 		// TODO Auto-generated method stub
 		var sql = "Select * from skripsi where tahun <=?";
@@ -26,7 +41,7 @@ public class SkripsiRepository implements ISkripsiRepository {
 	@Override
 	public List<SkripsiModel> selectByKata(SkripsiModel model, String kata) {
 		// TODO Auto-generated method stub
-		var sql = "Select * from skripsi where judul like '%"+kata+"%'";
+		var sql = "Select * from skripsi where judul like '%" + kata + "%'";
 		return jdbc.query(sql, new BeanPropertyRowMapper<SkripsiModel>(SkripsiModel.class));
 	}
 
@@ -47,8 +62,39 @@ public class SkripsiRepository implements ISkripsiRepository {
 	@Override
 	public List<SkripsiModel> selectByTidakBerawalanHuruf(SkripsiModel model, String huruf) {
 		// TODO Auto-generated method stub
-		var sql = "Select * from skripsi where judul like '"+huruf+"%' order by tahun desc";
+		var sql = "Select * from skripsi where judul like '" + huruf + "%' order by tahun desc";
 		return jdbc.query(sql, new BeanPropertyRowMapper<SkripsiModel>(SkripsiModel.class));
 	}
+	
+	@Override
+	public List<SkripsiModel> search(String huruf) {
+		// TODO Auto-generated method stub
+		var sql = "Select * from skripsi where judul like '" + huruf + "%' order by tahun desc";
+		return jdbc.query(sql, new BeanPropertyRowMapper<SkripsiModel>(SkripsiModel.class));
+	}
+
+	@Override
+	public int deleteById(int id) {
+		// TODO Auto-generated method stub
+		var sql = "Delete from skripsi where id=?";
+		return jdbc.update(sql,id);
+	}
+
+	@Override
+	public int deleteByIdUrl(int id) {
+		// TODO Auto-generated method stub
+		var sql = "Delete from skripsi where id=?";
+		return jdbc.update(sql,id);
+	}
+
+	@Override
+	public int editById(SkripsiModel model, int id) {
+		// TODO Auto-generated method stub
+		var sql = "update skripsi set judul =?, nilai=?, tahun=? where id =?";
+		return jdbc.update(sql,
+				new Object[] { model.getJudul(), model.getNilai(), model.getTahun(),id});
+	}
+
+	
 
 }

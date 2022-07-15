@@ -46,4 +46,40 @@ public class SkripsiService implements ISkripsiService {
 		return skripsiRepository.selectByTidakBerawalanHuruf(model, huruf);
 	}
 
+	@Override
+	public int insert(SkripsiModel model) {
+		// TODO Auto-generated method stub
+		return skripsiRepository.insert(model);
+	}
+
+	@Override
+	public List<SkripsiModel> selectAll() {
+		// TODO Auto-generated method stub
+		return skripsiRepository.selectAll();
+	}
+
+	@Override
+	public List<SkripsiModel> search(String huruf) {
+		// TODO Auto-generated method stub
+		return skripsiRepository.search(huruf);
+	}
+
+	@Override
+	public int deleteById(int id) {
+		// TODO Auto-generated method stub
+		return skripsiRepository.deleteById(id);
+	}
+
+	@Override
+	public int deleteByIdUrl(int id) {
+		// TODO Auto-generated method stub
+		return skripsiRepository.deleteByIdUrl(id);
+	}
+
+	@Override
+	public int editById(SkripsiModel model, int id) {
+		// TODO Auto-generated method stub
+		return skripsiRepository.editById(model, id);
+	}
+
 }
