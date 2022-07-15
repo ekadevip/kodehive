@@ -1,4 +1,5 @@
 # kodehive
+## Quiz Model No.2
 
 1. Menampilkan Skripsi yang tahun pembuatannya tidak lebih tahun (?)
 Screenshot output : ![gambar](https://user-images.githubusercontent.com/17564153/179147221-97db6f2b-b22b-4679-9d55-07f686058808.png)
@@ -14,3 +15,9 @@ Screenshot output : ![gambar](https://user-images.githubusercontent.com/17564153
 
 5. Menampilkan skripsi dari yang terbaru hingga terlawas dan tidak boleh yang judulnya berawalan huruf (?), 
 Screenshot output : ![gambar](https://user-images.githubusercontent.com/17564153/179146979-717db2ad-d91d-46ea-beeb-cd52b51aa18c.png)
+
+## Quiz Back-End Update
+
+1. Buatlah fungsi update berdasarkan data yang sudah digunakan sebelumnya.
+Screenshoot output : ![gambar](https://user-images.githubusercontent.com/17564153/179194042-3e60ea69-01ae-4959-93f4-706940611bd9.png)
+
