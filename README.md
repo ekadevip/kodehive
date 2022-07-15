@@ -16,7 +16,7 @@ Screenshot output : ![gambar](https://user-images.githubusercontent.com/17564153
 5. Menampilkan skripsi dari yang terbaru hingga terlawas dan tidak boleh yang judulnya berawalan huruf (?), 
 Screenshot output : ![gambar](https://user-images.githubusercontent.com/17564153/179146979-717db2ad-d91d-46ea-beeb-cd52b51aa18c.png)
 
-## Quiz Back-End Update
+## Quiz Back-End Update No.1
 
 1. Buatlah fungsi update berdasarkan data yang sudah digunakan sebelumnya.
 Screenshoot output : ![gambar](https://user-images.githubusercontent.com/17564153/179194042-3e60ea69-01ae-4959-93f4-706940611bd9.png)
