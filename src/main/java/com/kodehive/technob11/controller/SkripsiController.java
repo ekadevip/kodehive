@@ -17,10 +17,10 @@ import com.kodehive.technob11.model.SkripsiModel;
 import com.kodehive.technob11.service.ISkripsiService;
 
 @Controller
-@RequestMapping("/skripsi")
+@RequestMapping("/skripsi")//bisa digunakan untuk class ataupun method
 public class SkripsiController {
 
-	@Autowired
+	@Autowired //berkaitan dengan dependencies injection
 	ISkripsiService SkripsiService;
 
 	@RequestMapping("/view1/{tahun}")
@@ -54,7 +54,7 @@ public class SkripsiController {
 		return SkripsiService.selectByTidakBerawalanHuruf(model, huruf);
 	}
 	
-	@PostMapping("/insert")
+	@PostMapping("/insert")//post,put/get/delete hanya bisa digunakan di method saja
 	@ResponseBody
 	public String insert(@RequestBody SkripsiModel model) {
 		SkripsiService.insert(model);

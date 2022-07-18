@@ -1,20 +1,19 @@
 package com.kodehive.technob11.service.impl;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.kodehive.technob11.model.SkripsiModel;
-import com.kodehive.technob11.repository.impl.SkripsiRepository;
+import com.kodehive.technob11.repository.ISkripsiRepository;
 import com.kodehive.technob11.service.ISkripsiService;
 
 @Service
 public class SkripsiService implements ISkripsiService {
 
 	@Autowired
-	SkripsiRepository skripsiRepository;
+	ISkripsiRepository skripsiRepository;
 
 	@Override
 	public List<SkripsiModel> selectByKurangDariTahun(SkripsiModel model, int tahun) {
