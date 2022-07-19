@@ -30,5 +30,5 @@ Screenshoot output : ![gambar](https://user-images.githubusercontent.com/1756415
 Screenshoot output : ![gambar](https://user-images.githubusercontent.com/17564153/179650674-f6ac7599-a2f4-4510-a808-34cc930c5a6b.png)
 
 3. Tampilkan data mahasiswa yang sudah mempunyai skripsi pada postman berdasarkan inputan categorynya
-Screenshoot output : ![gambar](https://user-images.githubusercontent.com/17564153/179650745-d9ff32d6-570a-40d7-b983-e497580ef786.png)
+Screenshoot output : ![gambar](https://user-images.githubusercontent.com/17564153/179698112-cb798e22-c8ee-432b-8cd8-747305ad531a.png)
 
