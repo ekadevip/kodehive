@@ -6,34 +6,42 @@
 </head>
 <body>
 
-	<form id="form1">
-		<label for="fname">Nomor pasien:</label>
-		<input type="text" id="nomor" name="nomor"><br>
-		
-		<label for="fname">Nama pasien:</label>
-		<input type="text" id="nama" name="nama"><br>
-		
-		<label for="fname">Gender pasien:</label> 
-		<input type="radio"value="Pria">
-		<label for="html">Pria</label>
-		<inputtype="radio" value="Wanita">
-		<label for="css">Wanita</label><br>
-		
-		<label for="fname">Kategori pasien:</label>
-		<select id="kategori" name="kategori">
-    	<option value="bpjs">BPJS</option>
-    	<option value="asuransi">Asuransi</option>
-    	<option value="pribadi">Pribadi</option>
-  		</select><br>
-		
-		<labelfor="fname">Biaya pasien:</label>
-		<input type="text" id="nama"name="nama"><br>
-		
-		<label for="fname">TanggalLahir:</label>
-		<input type="date" id="nama" name="nama"><br>
-		
-		<input type="submit" value="Submit">
-		<input type="submit"value="Reset">
-	</form>
+	<table>
+		<tr>
+			<td>Nomor Pasien :</td>
+			<td><input type="text" id="nomor" name="nomor"><br>
+			</td>
+		</tr>
+		<tr>
+			<td>Nama pasien :</td>
+			<td><input type="text" id="nama" name="nama"></td>
+		</tr>
+		<tr>
+			<td>Gender Pasien :</td>
+			<td><input id="gender" name="gender" type="radio" value="Pria">Pria 
+			<input id="gender" name="gender" type="radio" value="Wanita">wanita</td>
+		</tr>
+		<tr>
+			<td>Kategori Pasien :</td>
+			<td><select id="kategori" name="kategori">
+					<option value="bpjs">BPJS</option>
+					<option value="asuransi">Asuransi</option>
+					<option value="pribadi">Pribadi</option>
+			</select></td>
+		</tr>
+		<tr>
+			<td>Biaya pasien :</td>
+			<td><input type="text" id="biaya" name="biaya"></td>
+		</tr>
+		<tr>
+			<td>Tanggal lahir :</td>
+			<td><input type="text" id="tanggal_lahir" name="tanggal_lahir"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="submit" value="Submit"> <input
+				type="submit" value="Reset"></td>
+		</tr>
+	</table>
 </body>
 </html>

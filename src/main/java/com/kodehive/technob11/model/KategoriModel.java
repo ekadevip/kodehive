@@ -6,21 +6,14 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import com.kodehive.technob11.repository.ISkripsiRepository;
-
 import lombok.Data;
 
 @Data
 @Entity
-@Table(name="SKRIPSI")
-public class SkripsiModel {
-	
+@Table(name = "kategori_skripsi")
+public class KategoriModel {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	int id;
-	String judul;
-	int nilai;
-	int tahun;
-	int kategori_id;
-	int mahasiswa_id;
+	private int id;
+	private String kategori;
 }

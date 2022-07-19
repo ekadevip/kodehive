@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.kodehive.technob11.model.MahasiswaModel;
 import com.kodehive.technob11.model.SkripsiModel;
 import com.kodehive.technob11.service.ISkripsiService;
 
@@ -23,6 +25,13 @@ public class SkripsiController {
 	@Autowired //berkaitan dengan dependencies injection
 	ISkripsiService SkripsiService;
 
+	@GetMapping("/viewAllSkripsi")
+	@ResponseBody
+	public List<SkripsiModel> viewAll(SkripsiModel model) {
+		return SkripsiService.selectAll();
+	}
+	
+	
 	@RequestMapping("/view1/{tahun}")
 	@ResponseBody
 	public List<SkripsiModel> selectSkripsi1(SkripsiModel model, @PathVariable String tahun) {
@@ -89,6 +98,12 @@ public class SkripsiController {
 	@ResponseBody
 	public int deleteByIdUrl(@PathVariable int id) {
 		return SkripsiService.deleteById(id);
+	}
+	
+	@RequestMapping("/viewMahasiswaSkripsiByKategori")
+	@ResponseBody
+	public <T> List<T> search(SkripsiModel model, @RequestParam String kategori){
+		return SkripsiService.selectByKategori(model, kategori);
 	}
 	
 }

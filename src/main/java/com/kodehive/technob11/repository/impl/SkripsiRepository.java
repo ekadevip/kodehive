@@ -7,6 +7,7 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
+import com.kodehive.technob11.model.MahasiswaModel;
 import com.kodehive.technob11.model.SkripsiModel;
 import com.kodehive.technob11.repository.ISkripsiRepository;
 
@@ -19,9 +20,9 @@ public class SkripsiRepository implements ISkripsiRepository {
 	@Override
 	public int insert(SkripsiModel model) {
 		// TODO Auto-generated method stub
-		var query = "Insert into skripsi(judul, nilai, tahun)" + "values (?,?,?)";
+		var query = "Insert into skripsi(judul, nilai, tahun, kategori_id, mahasiswa_id)" + "values (?,?,?,?,?)";
 		return jdbc.update(query,
-				new Object[] { model.getJudul(), model.getNilai(), model.getTahun() });
+				new Object[] { model.getJudul(), model.getNilai(), model.getTahun(), model.getKategori_id(), model.getMahasiswa_id() });
 	}
 	
 	@Override
@@ -93,6 +94,16 @@ public class SkripsiRepository implements ISkripsiRepository {
 		var sql = "update skripsi set judul =?, nilai=?, tahun=? where id =?";
 		return jdbc.update(sql,
 				new Object[] { model.getJudul(), model.getNilai(), model.getTahun(),id});
+	}
+
+	@Override
+	public List<SkripsiModel> selectByKategori(SkripsiModel model1, String kategori) {
+		// TODO Auto-generated method stub
+		var sql = "select s.id,s.judul, s.nilai, s.tahun,s.kategori_id,s.mahasiswa_id from mahasiswa m\r\n"
+				+ "right join skripsi s on m.id=s.mahasiswa_id \r\n"
+				+ "join kategori_skripsi k on s.kategori_id=k.id\r\n"
+				+ "where k.kategori like '%"+kategori+"%'";
+		return jdbc.query(sql, new BeanPropertyRowMapper<>(SkripsiModel.class));
 	}
 
 	

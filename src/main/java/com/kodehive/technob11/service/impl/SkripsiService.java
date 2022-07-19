@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.kodehive.technob11.model.MahasiswaModel;
 import com.kodehive.technob11.model.SkripsiModel;
 import com.kodehive.technob11.repository.ISkripsiRepository;
 import com.kodehive.technob11.service.ISkripsiService;
@@ -79,6 +80,12 @@ public class SkripsiService implements ISkripsiService {
 	public int editById(SkripsiModel model, int id) {
 		// TODO Auto-generated method stub
 		return skripsiRepository.editById(model, id);
+	}
+
+	@Override
+	public  <T> List<T> selectByKategori(SkripsiModel model, String kategori) {
+		// TODO Auto-generated method stub
+		return skripsiRepository.selectByKategori(model,kategori);
 	}
 
 }

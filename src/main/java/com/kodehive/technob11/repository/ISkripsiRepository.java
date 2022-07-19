@@ -9,6 +9,8 @@ public interface ISkripsiRepository {
 	public int insert(SkripsiModel model);
 
 	public List<SkripsiModel> selectAll();
+	
+	public <T> List<T> selectByKategori(SkripsiModel model1, String kategori);
 
 	public List<SkripsiModel> search(String huruf);
 
