@@ -33,7 +33,7 @@ Screenshoot output : ![gambar](https://user-images.githubusercontent.com/1756415
 Screenshoot output data skripsi : ![gambar](https://user-images.githubusercontent.com/17564153/179702465-1d2d3d62-cb23-4fd2-854a-a92e4245dab8.png)\
 Screenshoot output data mahasiswa : ![gambar](https://user-images.githubusercontent.com/17564153/179702043-d6ef8bad-6351-45e5-b538-4073234ad073.png)\
 Screenshoot output data kategori_skripsi :![gambar](https://user-images.githubusercontent.com/17564153/179702238-33e2e436-6cbb-472b-979d-206c838fabd3.png)\
-Hasilnya :\\
+Hasil output dari pencarian skripsi melalui kategori :\
 Screenshoot output : ![gambar](https://user-images.githubusercontent.com/17564153/179698112-cb798e22-c8ee-432b-8cd8-747305ad531a.png)\
 Screenshoot output : ![gambar](https://user-images.githubusercontent.com/17564153/179701699-94efa129-3c0a-4776-abc3-ea07a75e3544.png)
 
