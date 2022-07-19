@@ -21,3 +21,14 @@ Screenshot output : ![gambar](https://user-images.githubusercontent.com/17564153
 1. Buatlah fungsi update berdasarkan data yang sudah digunakan sebelumnya.
 Screenshoot output : ![gambar](https://user-images.githubusercontent.com/17564153/179194042-3e60ea69-01ae-4959-93f4-706940611bd9.png)
 
+## Quiz Back-End CRUD 2 No.1
+
+1. Buat ERD dari deskripsi diatas (bebas menggunakan app apapun)
+Screenshoot output : ![gambar](https://user-images.githubusercontent.com/17564153/179650477-e47c1253-f804-4fbb-9175-8df3dbf51d45.png)
+
+2. Tampilkan data mahasiswa yang sudah mempunyai skripsi pada postman
+Screenshoot output : ![gambar](https://user-images.githubusercontent.com/17564153/179650674-f6ac7599-a2f4-4510-a808-34cc930c5a6b.png)
+
+3. Tampilkan data mahasiswa yang sudah mempunyai skripsi pada postman berdasarkan inputan categorynya
+Screenshoot output : ![gambar](https://user-images.githubusercontent.com/17564153/179650745-d9ff32d6-570a-40d7-b983-e497580ef786.png)
+
