@@ -38,7 +38,12 @@ Screenshoot output : ![gambar](https://user-images.githubusercontent.com/1756415
 Screenshoot output : ![gambar](https://user-images.githubusercontent.com/17564153/179701699-94efa129-3c0a-4776-abc3-ea07a75e3544.png)
 
 ## Quiz Javascript 3 No.6
-Screenshoot output : ![gambar](https://user-images.githubusercontent.com/17564153/180127238-f72f70e5-ffc9-48c2-9460-68f73ffe5566.png)
+Screenshoot output : ![gambar](https://user-images.githubusercontent.com/17564153/180127238-f72f70e5-ffc9-48c2-9460-68f73ffe5566.png)\
 Screenshoot output ketika inputan diisi : ![gambar](https://user-images.githubusercontent.com/17564153/180127523-423967a0-284c-4e0a-8125-222f66897822.png)
+
+## Quiz Jquery 1 No.5
+Screenshoot output awal dijalankan : ![gambar](https://user-images.githubusercontent.com/17564153/180132628-2ab4e90c-b14e-43c9-bd19-8fd3683dde29.png)\
+Screenshoot output button Beri Warna diklik : ![gambar](https://user-images.githubusercontent.com/17564153/180132684-1bc0f079-bcbd-43de-b88e-7606e843a0d2.png)\
+Screenshoot output button Hapus Warna diklik : ![gambar](https://user-images.githubusercontent.com/17564153/180132719-bf2adf01-89f5-4f8e-adbb-104cbb7c3c5f.png)
 
 
