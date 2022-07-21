@@ -46,7 +46,7 @@ Screenshoot output awal dijalankan : ![gambar](https://user-images.githubusercon
 Screenshoot output button Beri Warna diklik : ![gambar](https://user-images.githubusercontent.com/17564153/180132684-1bc0f079-bcbd-43de-b88e-7606e843a0d2.png)\
 Screenshoot output button Hapus Warna diklik : ![gambar](https://user-images.githubusercontent.com/17564153/180132819-879eea32-266d-4f0c-b2f9-3fc99a3debcf.png)
 
-# No.6
+## Quiz Jquery 1 No.6
 Screenshoot output awal dijalankan : ![gambar](https://user-images.githubusercontent.com/17564153/180157961-fafc6b61-82a6-4220-9e41-97af6fe5660d.png)
 Screenshoot output button Animasi Surat diklik : ![gambar](https://user-images.githubusercontent.com/17564153/180158114-7fff98fd-6403-40b7-a01b-80b00e62484f.png)
 
