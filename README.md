@@ -37,5 +37,8 @@ Hasil output dari pencarian skripsi melalui kategori :\
 Screenshoot output : ![gambar](https://user-images.githubusercontent.com/17564153/179698112-cb798e22-c8ee-432b-8cd8-747305ad531a.png)\
 Screenshoot output : ![gambar](https://user-images.githubusercontent.com/17564153/179701699-94efa129-3c0a-4776-abc3-ea07a75e3544.png)
 
+## Quiz Javascript 3 No.6
+Screenshoot output : ![gambar](https://user-images.githubusercontent.com/17564153/180127238-f72f70e5-ffc9-48c2-9460-68f73ffe5566.png)
+Screenshoot output ketika inputan diisi : ![gambar](https://user-images.githubusercontent.com/17564153/180127523-423967a0-284c-4e0a-8125-222f66897822.png)
 
 
