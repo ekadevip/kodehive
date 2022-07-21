@@ -45,6 +45,10 @@ Screenshoot output ketika inputan diisi : ![gambar](https://user-images.githubus
 Screenshoot output foo1 : ![gambar](https://user-images.githubusercontent.com/17564153/180164886-bbf612f6-9b96-41af-9b3f-7493d39193a7.png)
 Screenshoot output foo2 : ![gambar](https://user-images.githubusercontent.com/17564153/180165050-6cf26d22-f126-4a25-8d00-ba253e47a44a.png)
 
+
+## Quiz Javascript 4 No.4
+Screenshoot output : ![gambar](https://user-images.githubusercontent.com/17564153/180165834-f3499813-d469-403d-8281-59efc1df58fd.png)
+
 ## Quiz Jquery 1 No.5
 Screenshoot output awal dijalankan : ![gambar](https://user-images.githubusercontent.com/17564153/180132628-2ab4e90c-b14e-43c9-bd19-8fd3683dde29.png)\
 Screenshoot output button Beri Warna diklik : ![gambar](https://user-images.githubusercontent.com/17564153/180132684-1bc0f079-bcbd-43de-b88e-7606e843a0d2.png)\
