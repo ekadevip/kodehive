@@ -41,6 +41,10 @@ Screenshoot output : ![gambar](https://user-images.githubusercontent.com/1756415
 Screenshoot output : ![gambar](https://user-images.githubusercontent.com/17564153/180127238-f72f70e5-ffc9-48c2-9460-68f73ffe5566.png)\
 Screenshoot output ketika inputan diisi : ![gambar](https://user-images.githubusercontent.com/17564153/180127523-423967a0-284c-4e0a-8125-222f66897822.png)
 
+## Quiz Javascript 4 No.1
+Screenshoot output foo1 : ![gambar](https://user-images.githubusercontent.com/17564153/180164886-bbf612f6-9b96-41af-9b3f-7493d39193a7.png)
+Screenshoot output foo2 : ![gambar](https://user-images.githubusercontent.com/17564153/180165050-6cf26d22-f126-4a25-8d00-ba253e47a44a.png)
+
 ## Quiz Jquery 1 No.5
 Screenshoot output awal dijalankan : ![gambar](https://user-images.githubusercontent.com/17564153/180132628-2ab4e90c-b14e-43c9-bd19-8fd3683dde29.png)\
 Screenshoot output button Beri Warna diklik : ![gambar](https://user-images.githubusercontent.com/17564153/180132684-1bc0f079-bcbd-43de-b88e-7606e843a0d2.png)\
@@ -49,6 +53,4 @@ Screenshoot output button Hapus Warna diklik : ![gambar](https://user-images.git
 ## Quiz Jquery 1 No.6
 Screenshoot output awal dijalankan : ![gambar](https://user-images.githubusercontent.com/17564153/180157961-fafc6b61-82a6-4220-9e41-97af6fe5660d.png)
 Screenshoot output button Animasi Surat diklik : ![gambar](https://user-images.githubusercontent.com/17564153/180158114-7fff98fd-6403-40b7-a01b-80b00e62484f.png)
-
-
 
