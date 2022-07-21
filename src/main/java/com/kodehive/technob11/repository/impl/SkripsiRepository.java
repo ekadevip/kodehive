@@ -9,6 +9,7 @@ import org.springframework.stereotype.Repository;
 
 import com.kodehive.technob11.model.MahasiswaModel;
 import com.kodehive.technob11.model.SkripsiModel;
+import com.kodehive.technob11.model.submissionModel.ByKategoriModel;
 import com.kodehive.technob11.repository.ISkripsiRepository;
 
 @Repository
@@ -97,13 +98,13 @@ public class SkripsiRepository implements ISkripsiRepository {
 	}
 
 	@Override
-	public List<SkripsiModel> selectByKategori(SkripsiModel model1, String kategori) {
+	public List<ByKategoriModel> selectByKategori(String kategori) {
 		// TODO Auto-generated method stub
-		var sql = "select s.id,s.judul, s.nilai, s.tahun,s.kategori_id,s.mahasiswa_id from mahasiswa m\r\n"
-				+ "right join skripsi s on m.id=s.mahasiswa_id \r\n"
+		var sql = "select * from mahasiswa m\r\n"
+				+ "join skripsi s on m.id=s.mahasiswa_id \r\n"
 				+ "join kategori_skripsi k on s.kategori_id=k.id\r\n"
 				+ "where k.kategori like '%"+kategori+"%'";
-		return jdbc.query(sql, new BeanPropertyRowMapper<>(SkripsiModel.class));
+		return jdbc.query(sql, new BeanPropertyRowMapper<ByKategoriModel>(ByKategoriModel.class));
 	}
 
 	

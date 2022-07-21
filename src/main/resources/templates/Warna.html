@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script type="text/javascript" src="../lib/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+	<hr>
+	<div align="center">
+		<p>Target 1 Paragraph</p>
+		<button class="beriWarna">Beri Warna</button>
+		<button class="hapusWarna">Hapus Warna</button>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.beriWarna').on('click', function(){
+				$('p').css('color','red');
+			});
+			$('.hapusWarna').on('click', function(){
+				$('p').css('color','black');
+			});
+		});
+</script>
+</body>
+</html>

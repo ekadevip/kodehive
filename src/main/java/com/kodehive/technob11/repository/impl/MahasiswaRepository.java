@@ -60,4 +60,12 @@ public class MahasiswaRepository implements IMahasiswaRepository {
 		return jdbc.query(sql, new BeanPropertyRowMapper<MahasiswaModel>(MahasiswaModel.class));
 	}
 
+	@Override
+	public int edit(MahasiswaModel model,int id) {
+		// TODO Auto-generated method stub
+		var sql = "update mahasiswa set nama=? where id =?";
+		return jdbc.update(sql,
+				new Object[] { model.getNama(), id});
+	}
+
 }

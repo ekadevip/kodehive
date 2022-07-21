@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>CSS</title>
+<style type="text/css">
+@import
+	url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&display=swap')
+	;
+
+h2 {
+	color: burlywood;
+	font-family: 'Cormorant SC', serif;
+	font-weight: bold;
+}
+
+/* * {
+	background-color: cadetblue;
+}
+*/
+div h3 {
+	color: blanchedalmond;
+	font-family: 'Cormorant SC', serif;
+	font-weight: lighter;
+}
+
+.bgcolor {
+	background-color: rosybrown;
+}
+
+#bgcolor {
+	background-color: darkcyan;
+}
+
+div>h1 {
+	color: blueviolet;
+	font-family: austria;
+	font-weight: bolder;
+}
+
+input[type="number"]{
+	color: darkgoldenrod;
+}
+
+p, h4, input[type='text']{
+	font-family: Austria;
+	font-weight: normal;
+	color: yellowgreen;
+}
+
+</style>
+
+</head>
+<body>
+	<div>
+		<h3 class='bgcolor'>Coba descendant</h3>
+	</div>
+	<h2 id="bgcolor">Coba Css</h2>
+	
+	<div>
+	<h1>Coba selector 1</h1>
+	<h2>Coba selector 2</h2>
+	</div>
+	<p><input type="text"></p>
+	<input type="number">
+	<input type="text">
+</body>
+</html>

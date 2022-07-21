@@ -46,4 +46,10 @@ public class MahasiswaService implements IMahasiswaService {
 		// TODO Auto-generated method stub
 		return mahasiswaRepository.viewMahasiswaSkripsiByKategori(model, kategori);
 	}
+
+	@Override
+	public int edit(MahasiswaModel model, int id) {
+		// TODO Auto-generated method stub
+		return mahasiswaRepository.edit(model, id);
+	}
 }

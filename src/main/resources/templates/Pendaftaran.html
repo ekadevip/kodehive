@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+
+<style>
+.textAtas {
+	color: red;
+	font-size: small;
+}
+
+.textBawah {
+	color: gray;
+	font-size: x-small;
+}
+
+.header {
+	color: gray;
+}
+</style>
+<body>
+
+	<h3 class="header">Buat Account Baru</h3>
+	<hr />
+	<p>
+		For international applicants, please contact our <a href="">International
+			Office</a> regarding application procedure. This registration form is
+		meant for Indonesian citizen only.
+	</p>
+	<p>
+		Hapar menggunakan account lama Anda jika Anda telah membuat
+		pendaftaran sebelumnya. <br />
+	<form>
+		<div>
+			<table>
+				<thead>
+					<h4 class="header">Login</h4>
+					<hr />
+				</thead>
+				<tbody>
+					<tr>
+						<td></td>
+						<td><label class="textAtas" id="label_username">Field
+								ini harus diisi</label></td>
+					</tr>
+					<tr>
+						<td>Username</td>
+						<td><input type="text" id="username"
+							onkeyup="emptyValidation(id)"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><label class="textBawah">Username yang anda
+								inginkan(hanya dapat terdiri dari huruf,angka dan _) Username
+								tidak boleh mengandung spasi</label></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><label class="textAtas" id="label_password">Field
+								ini harus diisi</label></td>
+					</tr>
+					<tr>
+						<td>Password</td>
+						<td><input type="password" id="password"
+							onkeyup="emptyValidation(id)"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><label class="textBawah">Masukkan password.
+								Password minimal terdiri dari 6 karakter dan case sensitif(A
+								beda dengan A)</label></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><label class="textAtas" id="label_ulangi_password">Field
+								ini harus diisi</label></td>
+					</tr>
+					<tr>
+						<td>Ulangi Password</td>
+						<td><input type="password" id="ulangi_password"
+							onkeyup="emptyValidation(id)"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</form>
+
+	<form>
+		<div>
+			<table>
+				<thead>
+					<h4 class="header">Identitas</h4>
+					<hr />
+				</thead>
+				<tbody>
+					<tr>
+						<td></td>
+						<td><label class="textAtas" id="label_nama_identitas">Nama
+								sesuai identitas harus diisi</label></td>
+					</tr>
+					<tr>
+						<td>Nama sesuai identitas</td>
+						<td><input type="text" id="nama_identitas"
+							onkeyup="emptyValidation(id)"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><label class="textBawah">Nama sesuai yang
+								tertulis di kartu identitas tanpa gelar akademis/sertifikasi.<br />
+								Nama diawali huruf besar di awal dan setelah spasi, contoh
+								benar: Abc Def, contoh salah: abc def, ABC DEF
+						</label></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><label class="textAtas" id="label_nama_ijazah">Nama
+								sesuai ijazah harus diisi</label></td>
+					</tr>
+					<tr>
+						<td>Nama sesuai ijazah</td>
+						<td><input type="text" id="nama_ijazah"
+							onkeyup="emptyValidation(id)"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><label class="textBawah">Nama sesuai yang
+								tertulis di kartu identitas tanpa gelar akademis/sertifikasi.<br />
+								Nama diawali huruf besar di awal dan setelah spasi, contoh
+								benar: Abc Def, contoh salah: abc def, ABC DEF
+						</label></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><label class="textAtas" id="label_jenis_identitas">Anda
+								belum memiliki identitas</label></td>
+					</tr>
+					<tr>
+						<td>Jenis identitas</td>
+						<td><select id="jenis_identitas"
+							onchange="emptyValidation(id)">
+								<option value="">--PILIH--</option>
+								<option value="pilihan1">KTP</option>
+								<option value="pilihan2">SIM</option>
+						</select></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><label class="textBawah">Pilih jenis identitas
+								Anda. Identitas harus dibawa ketika ujian/daftar ulang.</label></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><label class="textAtas" id="label_no_identitas">Field
+								ini harus diisi</label></td>
+					</tr>
+					<tr>
+						<td>Nomor identitas</td>
+						<td><input type="text" id="no_identitas"
+							onkeyup="emptyValidation(id)"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><label class="textAtas" id="label_kewarganegaraan">Field
+								ini harus diisi</label></td>
+					</tr>
+					<tr>
+						<td>Kewarganegaraan</td>
+						<td><select id="kewarganegaraan"
+							onchange="emptyValidation(id)">
+								<option value=''>--PILIH--</option>
+								<option value="pilihan2">Indonesia</option>
+						</select></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</form>
+
+	<script>
+	function emptyValidation(id) {
+	var x = document.getElementById(id).value;
+	var y = document.getElementById("label_"+id);
+	if (x !='') {
+		y.style.visibility="hidden";
+	} else {
+		y.style.visibility="visible";
+	}
+}</script>
+</body>
+</html>

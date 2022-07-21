@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.kodehive.technob11.model.MahasiswaModel;
 import com.kodehive.technob11.model.SkripsiModel;
+import com.kodehive.technob11.model.submissionModel.ByKategoriModel;
 import com.kodehive.technob11.repository.ISkripsiRepository;
 import com.kodehive.technob11.service.ISkripsiService;
 
@@ -83,9 +84,9 @@ public class SkripsiService implements ISkripsiService {
 	}
 
 	@Override
-	public  <T> List<T> selectByKategori(SkripsiModel model, String kategori) {
+	public List<ByKategoriModel> selectByKategori(String kategori) {
 		// TODO Auto-generated method stub
-		return skripsiRepository.selectByKategori(model,kategori);
+		return skripsiRepository.selectByKategori(kategori);
 	}
 
 }

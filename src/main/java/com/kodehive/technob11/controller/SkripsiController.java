@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.kodehive.technob11.model.MahasiswaModel;
 import com.kodehive.technob11.model.SkripsiModel;
+import com.kodehive.technob11.model.submissionModel.ByKategoriModel;
 import com.kodehive.technob11.service.ISkripsiService;
 
 @Controller
@@ -30,7 +30,6 @@ public class SkripsiController {
 	public List<SkripsiModel> viewAll(SkripsiModel model) {
 		return SkripsiService.selectAll();
 	}
-	
 	
 	@RequestMapping("/view1/{tahun}")
 	@ResponseBody
@@ -102,8 +101,8 @@ public class SkripsiController {
 	
 	@RequestMapping("/viewMahasiswaSkripsiByKategori")
 	@ResponseBody
-	public <T> List<T> search(SkripsiModel model, @RequestParam String kategori){
-		return SkripsiService.selectByKategori(model, kategori);
+	public List<ByKategoriModel>selectByKategori(@RequestParam String kategori){
+		return SkripsiService.selectByKategori(kategori);
 	}
 	
 }

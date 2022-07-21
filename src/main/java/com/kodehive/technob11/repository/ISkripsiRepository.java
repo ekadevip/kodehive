@@ -3,6 +3,7 @@ package com.kodehive.technob11.repository;
 import java.util.List;
 
 import com.kodehive.technob11.model.SkripsiModel;
+import com.kodehive.technob11.model.submissionModel.ByKategoriModel;
 
 public interface ISkripsiRepository {
 	
@@ -10,7 +11,7 @@ public interface ISkripsiRepository {
 
 	public List<SkripsiModel> selectAll();
 	
-	public <T> List<T> selectByKategori(SkripsiModel model1, String kategori);
+	public List<ByKategoriModel> selectByKategori(String kategori);
 
 	public List<SkripsiModel> search(String huruf);
 

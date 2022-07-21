@@ -6,12 +6,13 @@ import org.springframework.stereotype.Service;
 
 import com.kodehive.technob11.model.MahasiswaModel;
 import com.kodehive.technob11.model.SkripsiModel;
+import com.kodehive.technob11.model.submissionModel.ByKategoriModel;
 
 @Service
 public interface ISkripsiService {
 	public int insert(SkripsiModel model);
 	public List<SkripsiModel> selectAll();
-	public <T> List<T> selectByKategori(SkripsiModel model, String kategori);
+	public List<ByKategoriModel> selectByKategori(String kategori);
 	public List<SkripsiModel> search(String huruf);
 	public List<SkripsiModel> selectByKurangDariTahun(SkripsiModel model, int tahun);
 	public List<SkripsiModel> selectByKata(SkripsiModel model, String kata);
