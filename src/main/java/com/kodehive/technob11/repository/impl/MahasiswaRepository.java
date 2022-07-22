@@ -68,4 +68,11 @@ public class MahasiswaRepository implements IMahasiswaRepository {
 				new Object[] { model.getNama(), id});
 	}
 
+	@Override
+	public List<MahasiswaModel> readAll() {
+		// TODO Auto-generated method stub
+		var sql = "Select * from mahasiswa";
+		return jdbc.query(sql, new BeanPropertyRowMapper<MahasiswaModel>(MahasiswaModel.class));
+	}
+
 }

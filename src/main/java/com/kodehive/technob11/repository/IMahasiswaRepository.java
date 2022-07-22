@@ -12,4 +12,5 @@ public interface IMahasiswaRepository {
 	public List<MahasiswaModel> viewAll(MahasiswaModel model);
 	public List<MahasiswaModel> viewMahasiswaSkripsi(MahasiswaModel model);
 	public List<MahasiswaModel> viewMahasiswaSkripsiByKategori(MahasiswaModel model, String kategori);
+	public List<MahasiswaModel> readAll();
 }

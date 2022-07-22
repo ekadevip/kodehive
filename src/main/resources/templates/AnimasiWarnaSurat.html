@@ -15,7 +15,7 @@
 <script type="text/javascript" src="../lib/jquery-3.6.0.min.js"></script>
 
 <style type="text/css">
-.segitiga1 {
+#segitiga1 {
 	width: 0px;
 	height: 0px;
 	border-left: 50px solid red;
@@ -26,7 +26,7 @@
 	display: none;
 }
 
-.segitiga2 {
+#segitiga2 {
 	width: 0px;
 	height: 0px;
 	border-left: 50px solid green;
@@ -37,7 +37,7 @@
 	display: none;
 }
 
-.segitiga3 {
+#segitiga3 {
 	width: 0px;
 	height: 0px;
 	border-left: 50px solid royalblue;
@@ -47,36 +47,44 @@
 	margin: 20px;
 	display: none;
 }
+
+#kotak {
+	width: 250px;
+	height: 300px;
+	background-color: lightgrey;
+}
 </style>
 </head>
 <body>
-	<div class="container">
-		<div class="row">
-			<div class="col-3" margin-top="20px">
-				<select class="form-control" id="background">
-					<option>Pilih background</option>
-					<option>Hijau</option>
-					<option>Hitam</option>
-					<option>Kuning</option>
-				</select>
-			</div>
-		</div>
+	<div style="width: 200px; margin-left: 300px; margin-top: 20px;">
+		<select id="pilihan" class="form-select"
+			aria-label="Default select example">
+			<option value="">Pilih background</option>
+			<option value="lawngreen">Hijau</option>
+			<option value="black">Hitam</option>
+			<option value="yellow">Kuning</option>
+		</select>
 	</div>
-
 	<div align="center">
-		<button type="button" style="margin-top: 20px;"
-			class="btn btn-primary">Animasi Surat</button>
-		<div class="segitiga1"></div>
-		<div class="segitiga2"></div>
-		<div class="segitiga3"></div>
+		<div id="kotak">
+			<button id="btnSurat" type="button" style="margin-top: 20px;"
+				class="btn btn-primary">Animasi Surat</button>
+			<div id="segitiga1"></div>
+			<div id="segitiga2"></div>
+			<div id="segitiga3"></div>
+		</div>
 	</div>
 
 	<script type="text/javascript">
 	$(document).ready(function(){
-  		$("button").click(function(){
-    		$(".segitiga1").fadeToggle();
-    		$(".segitiga2").fadeToggle("slow");
-    		$(".segitiga3").fadeToggle(2000);
+		$("#pilihan").on("change", function(){
+	  		const pilihanWarna = $('#pilihan').val();
+	  		$("#kotak").css("background-color",pilihanWarna);
+  		});
+  		$("#btnSurat").click(function(){
+    		$("#segitiga1").fadeIn();
+    		$("#segitiga2").fadeIn("slow");
+    		$("#segitiga3").fadeIn(2000);
   		});
 	});
 	</script>

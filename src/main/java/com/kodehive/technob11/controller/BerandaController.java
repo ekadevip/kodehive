@@ -48,9 +48,15 @@ public class BerandaController {
 		return html;
 	}
 	
-	@RequestMapping("/quiz2")
-	public String quiz2() {
-		String html = "Quiz2";
+	@RequestMapping("/warnaSurat")
+	public String warnaSurat() {
+		String html = "AnimasiWarnaSurat";
+		return html;
+	}
+	
+	@RequestMapping("/textWarna")
+	public String textWarna() {
+		String html = "AnimasiTulisanWarna";
 		return html;
 	}
 }

@@ -14,4 +14,5 @@ public interface IMahasiswaService {
 	public List<MahasiswaModel> viewMahasiswaSkripsiByKategori(MahasiswaModel model, String kategori);
 	public List<MahasiswaModel> viewAll(MahasiswaModel model);
 	public int addMahasiswa(MahasiswaModel model);
+	public List<MahasiswaModel> readAll();
 }
