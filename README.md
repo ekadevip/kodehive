@@ -50,11 +50,21 @@ Screenshoot output foo2 : ![gambar](https://user-images.githubusercontent.com/17
 Screenshoot output : ![gambar](https://user-images.githubusercontent.com/17564153/180165834-f3499813-d469-403d-8281-59efc1df58fd.png)
 
 ## Quiz Jquery 1 No.5
-Screenshoot output awal dijalankan : ![gambar](https://user-images.githubusercontent.com/17564153/180132628-2ab4e90c-b14e-43c9-bd19-8fd3683dde29.png)\
-Screenshoot output button Beri Warna diklik : ![gambar](https://user-images.githubusercontent.com/17564153/180132684-1bc0f079-bcbd-43de-b88e-7606e843a0d2.png)\
+Screenshot output awal dijalankan : ![gambar](https://user-images.githubusercontent.com/17564153/180132628-2ab4e90c-b14e-43c9-bd19-8fd3683dde29.png)\
+Screenshot output button Beri Warna diklik : ![gambar](https://user-images.githubusercontent.com/17564153/180132684-1bc0f079-bcbd-43de-b88e-7606e843a0d2.png)\
 Screenshoot output button Hapus Warna diklik : ![gambar](https://user-images.githubusercontent.com/17564153/180132819-879eea32-266d-4f0c-b2f9-3fc99a3debcf.png)
 
 ## Quiz Jquery 1 No.6
-Screenshoot output awal dijalankan : ![gambar](https://user-images.githubusercontent.com/17564153/180157961-fafc6b61-82a6-4220-9e41-97af6fe5660d.png)
-Screenshoot output button Animasi Surat diklik : ![gambar](https://user-images.githubusercontent.com/17564153/180158114-7fff98fd-6403-40b7-a01b-80b00e62484f.png)
+Screenshot output awal dijalankan : ![gambar](https://user-images.githubusercontent.com/17564153/180157961-fafc6b61-82a6-4220-9e41-97af6fe5660d.png)\
+Screenshot output button Animasi Surat diklik : ![gambar](https://user-images.githubusercontent.com/17564153/180158114-7fff98fd-6403-40b7-a01b-80b00e62484f.png)
+
+## Quiz Jquery 2 No.1
+Screenshot output awal dijalankan : ![gambar](https://user-images.githubusercontent.com/17564153/180372076-64fb9faf-d6ff-4c7a-8248-9ef42a44d445.png)\
+Screenshot output ketika button Animasi Warna diklik : ![gambar](https://user-images.githubusercontent.com/17564153/180372214-ce06e43f-07b1-4022-9286-e1ea0243ac6f.png)\
+Screenshot output ketika memilih warna hijau : ![gambar](https://user-images.githubusercontent.com/17564153/180372391-333e90ea-9996-4aa3-bc5c-c3e9568e599d.png)\
+Screenshot output ketika memilih warna hitam : ![gambar](https://user-images.githubusercontent.com/17564153/180372435-aeaebfe9-e0c5-4adc-b88d-63ed9ed2b138.png)\
+Screenshot output ketika memilih warna kuning : ![gambar](https://user-images.githubusercontent.com/17564153/180372466-1e85471c-95e6-45da-ab91-a20bdc2958a1.png)
+
+## Quiz Jquery 2 No.2
+## Quiz Jquery 2 No.3
 
