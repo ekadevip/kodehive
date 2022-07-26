@@ -1,8 +1,8 @@
 # kodehive
 ## Quiz Model No.1
-Screenshot output model pasien : ![gambar](https://user-images.githubusercontent.com/17564153/180918774-ce0081a5-fedd-4849-89b5-018407cf4e8f.png)\
+Screenshot output model pasien : ![gambar](https://user-images.githubusercontent.com/17564153/180919276-5ea9f4b9-9a9d-4cfb-adcc-6c950652a52f.png)\
 Screenshot output database rumah sakit : ![gambar](https://user-images.githubusercontent.com/17564153/180919008-026ed79c-72ac-467d-a265-c31e74844357.png)\
-Screenshot output tampilan front end : ![gambar](https://user-images.githubusercontent.com/17564153/180919130-ac1be0d8-389c-4b48-80e0-393d3adf59aa.png)
+Screenshot output tampilan front end : ![gambar](https://user-images.githubusercontent.com/17564153/180919222-1160f03d-6280-4a3c-b217-e6b4c17c8149.png)
 
 ## Quiz Model No.2
 
