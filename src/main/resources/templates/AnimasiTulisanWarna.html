@@ -60,15 +60,17 @@
 		<select id="pilihan" class="form-select"
 			aria-label="Default select example">
 			<option value="">Pilih background</option>
-			<option value="lawngreen">Hijau</option>
-			<option value="black">Hitam</option>
-			<option value="yellow">Kuning</option>
+			<option value="hijau">Hijau</option>
+			<option value="hitam">Hitam</option>
+			<option value="kuning">Kuning</option>
 		</select>
 	</div>
 	<div align="center">
-		<h4>Saya telah memilih warna Background</h4><br>
 		<h4 id="text"></h4>
-		
+		<h3>
+			<strong id="textWarna"></strong>
+		</h3>
+
 		<div id="kotak">
 			<button id="btnSurat" type="button" style="margin-top: 20px;"
 				class="btn btn-primary">Animasi Surat</button>
@@ -83,9 +85,18 @@
 	<script type="text/javascript">
 	$(document).ready(function(){
 		$("#pilihan").on("change", function(){
-	  		const pilihanWarna = $('#pilihan').val();
-	  		$("#kotak").css("background-color",pilihanWarna);
-	  		$("#warnaPilihan").val(pilihanWarna);
+	  		const pilihanWarna = $("#pilihan").val();
+	  		if(pilihanWarna=="hijau"){
+	  			$("#kotak").css("background-color","lawngreen");
+	  			$("#warnaPilihan").val(pilihanWarna);
+	  		} else if(pilihanWarna=="hitam"){
+	  			$("#kotak").css("background-color","black");
+	  			$("#warnaPilihan").val(pilihanWarna);
+	  		} else if(pilihanWarna=="kuning"){
+	  			$("#kotak").css("background-color","yellow");
+	  			$("#warnaPilihan").val(pilihanWarna);
+	  		}
+	  		
   		});
   		
   		$("#btnSurat").click(function(){
@@ -96,7 +107,23 @@
   		
   		$("#btnWarna").click(function(){
     		const warna = $("#warnaPilihan").val();
-    		$("#text").text(warna);
+    		$("#text").text("Saya telah memilih warna Background");
+    		$("#textWarna").text(warna);
+  		});
+  		
+  		$("#textWarna").mouseover(function(){
+  			const warna = $("#textWarna").text();
+  			if(warna=="hijau"){
+  				$("#textWarna").css("background-color", "lawngreen");
+  			} else if(warna=="hitam"){
+  				$("#textWarna").css("background-color", "black");
+  			} else if(warna=="kuning"){
+  				$("#textWarna").css("background-color", "yellow");
+  			}
+ 		});
+ 		
+  		$("#textWarna").mouseout(function(){
+    		$("#textWarna").css("background-color", "");
   		});
 	});
 	</script>

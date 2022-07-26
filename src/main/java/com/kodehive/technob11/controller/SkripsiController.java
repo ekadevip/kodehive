@@ -72,7 +72,8 @@ public class SkripsiController {
 	@PutMapping("/edit")
 	@ResponseBody
 	public String editById(@RequestBody SkripsiModel model, @RequestParam int id) {
-		return "Skripsi update success.."+SkripsiService.editById(model,id);
+		SkripsiService.editById(model,id);
+		return "Skripsi update success..";
 	}
 	
 	@RequestMapping("/viewAll")

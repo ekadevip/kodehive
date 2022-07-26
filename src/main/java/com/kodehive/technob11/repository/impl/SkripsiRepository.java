@@ -94,7 +94,7 @@ public class SkripsiRepository implements ISkripsiRepository {
 		// TODO Auto-generated method stub
 		var sql = "update skripsi set judul =?, nilai=?, tahun=? where id =?";
 		return jdbc.update(sql,
-				new Object[] { model.getJudul(), model.getNilai(), model.getTahun(),id});
+				new Object[] { model.getJudul(), model.getNilai(), model.getTahun(), id});
 	}
 
 	@Override
