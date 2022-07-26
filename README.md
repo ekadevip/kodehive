@@ -69,7 +69,12 @@ Screenshot output ketika memilih warna kuning : ![gambar](https://user-images.gi
 Screenshot output awal dijalankan : ![gambar](https://user-images.githubusercontent.com/17564153/180914841-4ff44d4d-551d-42f0-a76a-2c7ee62c0090.png)\
 Screenshot output ketika button Animasi Warna diklik : ![gambar](https://user-images.githubusercontent.com/17564153/180914902-3af9555d-3ed4-45c6-9d2c-bb312a45320f.png)\
 Screenshot output ketika memilih warna hijau : ![gambar](https://user-images.githubusercontent.com/17564153/180914965-7a92578b-ceeb-4067-be41-e23cd109bd08.png)\
-Screenshot ketika button send di tekan : ![gambar](https://user-images.githubusercontent.com/17564153/180915010-08f7eb31-dd10-4acb-9a6d-d538c56568e4.png)
+Screenshot output ketika button send di tekan : ![gambar](https://user-images.githubusercontent.com/17564153/180915010-08f7eb31-dd10-4acb-9a6d-d538c56568e4.png)
 
 ## Quiz Jquery 2 No.3
-
+Screenshot output awal dijalankan : ![gambar](https://user-images.githubusercontent.com/17564153/180917069-de0a325e-eb93-41dc-b6b1-86ae9a322f63.png)\
+Screenshot output ketika button Animasi Warna diklik : ![gambar](https://user-images.githubusercontent.com/17564153/180917115-e1987bfd-e1be-4477-961c-15c3667c8085.png)\
+Screenshot output ketika memilih warna hijau : ![gambar](https://user-images.githubusercontent.com/17564153/180917162-0465790f-e91b-4017-a1c4-a215ead359e2.png)\
+Screenshot output ketika button send ditekan : ![gambar](https://user-images.githubusercontent.com/17564153/180917228-f71e1ae3-f542-48db-9d38-b0ce8b615f96.png)\
+Screenshot output ketika mouse diarahkan ke text warna : ![gambar](https://user-images.githubusercontent.com/17564153/180917272-dccdaef9-16e2-4518-86c5-e83a7a3e35b7.png)\
+Screenshout output ketika mouse diarahkan selain ke text warna : ![gambar](https://user-images.githubusercontent.com/17564153/180917345-57caded6-f519-4cda-9efb-2bbc7a90c967.png)
