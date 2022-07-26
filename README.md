@@ -27,6 +27,8 @@ Screenshot output update data skripsi di postman : ![gambar](https://user-images
 Screenshot output table skripsi setelah diupdate : ![gambar](https://user-images.githubusercontent.com/17564153/180924109-a2d98e13-3c56-40dd-924e-f464e8bea920.png)
 
 ## Quiz Model No.4
+Screenshot output skripsi dalam database : ![Uploading gambar.png…]()\
+Screenshot output skripsi pada postman : ![Uploading gambar.png…]()
 
 ## Quiz Back-End Update No.1
 
