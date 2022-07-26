@@ -21,6 +21,13 @@ Screenshot output : ![gambar](https://user-images.githubusercontent.com/17564153
 5. Menampilkan skripsi dari yang terbaru hingga terlawas dan tidak boleh yang judulnya berawalan huruf (?)\ 
 Screenshot output : ![gambar](https://user-images.githubusercontent.com/17564153/179146979-717db2ad-d91d-46ea-beeb-cd52b51aa18c.png)
 
+## Quiz Model No.3
+Screenshot output table skripsi awal : ![gambar](https://user-images.githubusercontent.com/17564153/180923911-11cc4a15-9393-49eb-9ebc-4d3a27af4eea.png)\
+Screenshot output update data skripsi di postman : ![gambar](https://user-images.githubusercontent.com/17564153/180924014-f2dfc19f-3971-41ce-b014-2ac8b85ffcfe.png)\
+Screenshot output table skripsi setelah diupdate : ![gambar](https://user-images.githubusercontent.com/17564153/180924109-a2d98e13-3c56-40dd-924e-f464e8bea920.png)
+
+## Quiz Model No.4
+
 ## Quiz Back-End Update No.1
 
 1. Buatlah fungsi update berdasarkan data yang sudah digunakan sebelumnya\
