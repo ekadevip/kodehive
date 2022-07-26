@@ -66,5 +66,10 @@ Screenshot output ketika memilih warna hitam : ![gambar](https://user-images.git
 Screenshot output ketika memilih warna kuning : ![gambar](https://user-images.githubusercontent.com/17564153/180372466-1e85471c-95e6-45da-ab91-a20bdc2958a1.png)
 
 ## Quiz Jquery 2 No.2
+Screenshot output awal dijalankan : ![gambar](https://user-images.githubusercontent.com/17564153/180914841-4ff44d4d-551d-42f0-a76a-2c7ee62c0090.png)\
+Screenshot output ketika button Animasi Warna diklik : ![gambar](https://user-images.githubusercontent.com/17564153/180914902-3af9555d-3ed4-45c6-9d2c-bb312a45320f.png)\
+Screenshot output ketika memilih warna hijau : ![gambar](https://user-images.githubusercontent.com/17564153/180914965-7a92578b-ceeb-4067-be41-e23cd109bd08.png)\
+Screenshot ketika button send di tekan : ![gambar](https://user-images.githubusercontent.com/17564153/180915010-08f7eb31-dd10-4acb-9a6d-d538c56568e4.png)
+
 ## Quiz Jquery 2 No.3
 
